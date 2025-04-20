@@ -6,7 +6,7 @@ public class caseMethodMain {
 
         int pilihan;
         do {
-            System.out.println("\n=== MENU SISTEM AKADEMIK ===");
+            System.out.println("=== MENU SISTEM AKADEMIK ===");
             System.out.println("1. Tampilkan Daftar Mahasiswa");
             System.out.println("2. Tampilkan Daftar Mata Kuliah");
             System.out.println("3. Tampilkan Data Penilaian");

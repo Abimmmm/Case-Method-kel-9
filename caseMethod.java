@@ -29,7 +29,6 @@ public class caseMethod {
         System.out.println("Kode MK: MK003 | Nama: Desain Web | SKS: 3");
     }
 
-    // bubble sort (desc)
     public static void urutkanMahasiswaBerdasarkanNilaiAkhir() {
         for (int i = 0; i < penilaians.length - 1; i++) {
             for (int j = 0; j < penilaians.length - i - 1; j++) {
@@ -40,7 +39,7 @@ public class caseMethod {
                 }
             }
         }
-        System.out.println("Data berhasil diurutkan berdasarkan nilai akhir (tertinggi ke terendah).");
+        System.out.println("Data berhasil diurutkan berdasarkan nilai akhir (DESC).");
         tampilNilai();
     }
 
@@ -49,8 +48,7 @@ public class caseMethod {
         for (int i = 0; i < penilaians.length; i++) {
             if (penilaians[i].mahasiswa.nim.equalsIgnoreCase(cari)) {
                 posisi = i;
-            } else {
-                return posisi;
+                break;
             }
         }
         return posisi;
