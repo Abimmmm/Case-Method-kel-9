@@ -1,4 +1,6 @@
+import java.util.Scanner;
 public class caseMethod {
+    Scanner sc = new Scanner(System.in);
     static caseMethodObjek[] penilaians = {
         new caseMethodObjek(new Mahasiswa("22001", "Ali Rahman", "Informatika"), new MataKuliah("MK001", "Struktur Data", 3), 80, 85, 90),
         new caseMethodObjek(new Mahasiswa("22001", "Ali Rahman", "Informatika"), new MataKuliah("MK002", "Basis Data", 3), 60, 75, 70),
@@ -41,5 +43,24 @@ public class caseMethod {
         System.out.println("Data berhasil diurutkan berdasarkan nilai akhir (tertinggi ke terendah).");
         tampilNilai();
     }
-    
+
+    public static int cariMahasiswaBerdasarkanNIM(String cari) {
+        int posisi = -1;
+        for (int i = 0; i < penilaians.length; i++) {
+            if (penilaians[i].mahasiswa.nim.equalsIgnoreCase(cari)) {
+                posisi = i;
+            } else {
+                return posisi;
+            }
+        }
+        return posisi;
+    }
+
+    public static void tampilPencarian(String x, int pos) {
+        if (pos != -1) {
+            System.out.println("Mahasiswa Ditemukan: NIM: " + penilaians[pos].mahasiswa.nim + " | Nama: " + penilaians[pos].mahasiswa.nama + " | Prodi: " + penilaians[pos].mahasiswa.prodi);
+        } else {
+            System.out.println("Data Mahasiswa dengan NIM: " + x + " Tidak ditemukan.");
+        }
+    }
 }

@@ -33,6 +33,8 @@ public class caseMethodMain {
                 case 5:
                     System.out.print("Masukkan NIM yang dicari: ");
                     String nim = sc.nextLine();
+                    int posisi = caseMethod.cariMahasiswaBerdasarkanNIM(nim);
+                    caseMethod.tampilPencarian(nim, posisi);
                     break;
                 case 0:
                     System.out.println("Program selesai. Terima kasih");
