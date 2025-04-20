@@ -1,11 +1,12 @@
 import java.util.Scanner;
+
 public class caseMethodMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         int pilihan;
         do {
-            System.out.println("=== MENU SISTEM AKADEMIK ===");
+            System.out.println("\n=== MENU SISTEM AKADEMIK ===");
             System.out.println("1. Tampilkan Daftar Mahasiswa");
             System.out.println("2. Tampilkan Daftar Mata Kuliah");
             System.out.println("3. Tampilkan Data Penilaian");
@@ -14,23 +15,24 @@ public class caseMethodMain {
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
             pilihan = sc.nextInt();
-            sc.nextLine(); 
+            sc.nextLine();
 
             switch (pilihan) {
                 case 1:
-                   caseMethod.tampilMahasiswa();
+                    caseMethod.tampilMahasiswa();
                     break;
                 case 2:
                     caseMethod.tampilMataKuliah();
                     break;
                 case 3:
-                    tampilPenilaian(); 
+                    caseMethod.tampilPenilaian();
                     break;
                 case 4:
-                    urutkanMahasiswaBerdasarkanNilaiAkhir(); 
+                    caseMethod.urutkanMahasiswaBerdasarkanNilaiAkhir();
                     break;
                 case 5:
-                    cariMahasiswaBerdasarkanNIM(); 
+                    System.out.print("Masukkan NIM yang dicari: ");
+                    String nim = sc.nextLine();
                     break;
                 case 0:
                     System.out.println("Program selesai. Terima kasih");
@@ -40,5 +42,4 @@ public class caseMethodMain {
             }
         } while (pilihan != 0);
     }
-        
 }
