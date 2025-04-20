@@ -13,7 +13,7 @@ public class caseMethodObjek {
         this.nilaiAkhir = (tugas * 0.3) + (uts * 0.3) + (uas * 0.4);
     }
 
-    void tampilPenilaian() {
+    public void tampilPenilaian() {
         System.out.println(mahasiswa.nama + " | " + matkul.namaMK + " | Nilai Akhir: " + nilaiAkhir);
     }
 }
