@@ -16,17 +16,7 @@ public class caseMethod {
 
     public static void tampilMataKuliah() {
         System.out.println("Daftar Mata Kuliah:");
-        boolean[] tampil = new boolean[penilaians.length];
-        for (int i = 0; i < penilaians.length; i++) {
-            if (!tampil[i]) {
-                System.out.println("Kode MK: " + penilaians[i].matkul.kodeMK + " | Nama: " + penilaians[i].matkul.namaMK + " | SKS: " + penilaians[i].matkul.sks);
-                for (int j = i + 1; j < penilaians.length; j++) {
-                    if (penilaians[i].matkul.kodeMK.equals(penilaians[j].matkul.kodeMK)) {
-                        tampil[j] = true;
-                    }
-                }
-            }
-        }
+        
     }
 
     public static void tampilPenilaian() {
