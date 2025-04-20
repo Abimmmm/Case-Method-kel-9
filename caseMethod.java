@@ -38,20 +38,8 @@ public class caseMethod {
                 }
             }
         }
-        System.out.println("\nData berhasil diurutkan berdasarkan nilai akhir (tertinggi ke terendah).");
+        System.out.println("Data berhasil diurutkan berdasarkan nilai akhir (tertinggi ke terendah).");
         tampilNilai();
     }
-    public static void cariMahasiswaBerdasarkanNIM(String nim) {
-        boolean ditemukan = false;
-        System.out.println("\nData Penilaian:");
-        for (caseMethodObjek p : penilaians) {
-            if (p.mahasiswa.nim.equalsIgnoreCase(nim)) {
-                p.tampilPenilaian();
-                ditemukan = true;
-            }
-        }
-        if (!ditemukan) {
-            System.out.println("Mahasiswa dengan NIM " + nim + " tidak ditemukan.");
-        }
-    }
+    
 }
