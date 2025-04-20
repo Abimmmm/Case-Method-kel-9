@@ -25,7 +25,7 @@ public class caseMethodMain {
                     caseMethod.tampilMataKuliah();
                     break;
                 case 3:
-                    caseMethod.tampilPenilaian();
+                    caseMethod.tampilNilai();
                     break;
                 case 4:
                     caseMethod.urutkanMahasiswaBerdasarkanNilaiAkhir();

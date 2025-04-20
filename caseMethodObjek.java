@@ -13,8 +13,31 @@ public class caseMethodObjek {
         this.nilaiAkhir = (tugas * 0.3) + (uts * 0.3) + (uas * 0.4);
     }
 
-    public void tampilPenilaian() {
+    void tampilPenilaian() {
         System.out.println(mahasiswa.nama + " | " + matkul.namaMK + " | Nilai Akhir: " + nilaiAkhir);
     }
 }
 
+class Mahasiswa {
+    String nim;
+    String nama;
+    String prodi;
+
+    public Mahasiswa(String nim, String nama, String prodi) {
+        this.nim = nim;
+        this.nama = nama;
+        this.prodi = prodi;
+    }
+}
+
+class MataKuliah {
+    String kodeMK;
+    String namaMK;
+    int sks;
+
+    public MataKuliah(String kodeMK, String namaMK, int sks) {
+        this.kodeMK = kodeMK;
+        this.namaMK = namaMK;
+        this.sks = sks;
+    }
+}
